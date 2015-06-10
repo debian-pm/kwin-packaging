@@ -1,3 +1,9 @@
+kwin (4:5.3.90-0ubuntu1) wily; urgency=medium
+
+  * Build-dep on libhybris and add kwin-hwcomposer-backend package
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Sat, 06 Jun 2015 02:44:00 +0200
+
 kwin (4:5.3.1-0ubuntu1) wily; urgency=medium
 
   [ Scarlett Clark ]
@@ -13,7 +19,7 @@ kwin (4:5.3.1-0ubuntu1) wily; urgency=medium
   [ Jonathan Riddell ]
   * New upstream release
 
- -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 05 Jun 2015 02:34:16 +0200
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 04 Jun 2015 20:27:57 +0200
 
 kwin (4:5.2.2a-0ubuntu1) vivid; urgency=medium
 
