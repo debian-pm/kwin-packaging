@@ -252,14 +252,6 @@ Depends: kwin-x11, ${misc:Depends}
 Priority: extra
 Section: oldlibs
 Description: Transitional for kwin-x11
- KWin (pronounced as one syllable "kwin") is the window
- manager for the KDE Plasma Desktop. It gives you complete
- control over your windows, making sure they're not in the way
- but aid you in your task. It paints the window decoration,
- the bar on top of every window with (configurable) buttons
- like close, maximize and minimize. It also handles placing
- of windows and switching between them.
- .
  This package is a transitional to depend on the renamed kwin-x11 and
  can be removed.
 
