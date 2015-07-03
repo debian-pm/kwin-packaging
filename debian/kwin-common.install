@@ -5,6 +5,7 @@ usr/lib/*/libexec/kwin*
 usr/lib/*/libkdeinit5_kwin_rules_dialog.so
 usr/lib/*/libkwin.so.5
 usr/lib/*/libkwin.so.5.*
+usr/lib/*/org.kde.kglobalaccel5.platforms/KF5GlobalAccelPrivateKWin.so
 usr/lib/*/qt5/plugins/kcm_kwin*.so
 usr/lib/*/qt5/plugins/kwin*.so
 usr/lib/*/qt5/plugins/kwin/
