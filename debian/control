@@ -120,6 +120,8 @@ Package: kwin-x11
 Architecture: any
 Depends: kwin-common (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Provides: kwin
+Breaks: kwin (<< 4:5.3.2+git20150715)
+Replaces: kwin (<< 4:5.3.2+git20150715)
 Description: KDE window manager, X11 version
  KWin (pronounced as one syllable "kwin") is the window
  manager for the KDE Plasma Desktop. It gives you complete
@@ -138,6 +140,8 @@ Depends: kwin-common (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Provides: kwin
+Breaks: kwin (<< 4:5.3.2+git20150715)
+Replaces: kwin (<< 4:5.3.2+git20150715)
 Description: KDE window manager, wayland version
  KWin (pronounced as one syllable "kwin") is the window
  manager for the KDE Plasma Desktop. It gives you complete
