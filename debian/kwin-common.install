@@ -1,5 +1,6 @@
 etc/xdg/aurorae.knsrc
 etc/xdg/kwin*.knsrc
+etc/xdg/org_kde_kwin.categories
 usr/lib/*/kconf_update_bin/kwin5_update_default_rules
 usr/lib/*/libexec/kwin*
 usr/lib/*/libkdeinit5_kwin_rules_dialog.so
