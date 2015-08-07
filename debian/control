@@ -248,8 +248,8 @@ Package: kwin-wayland-backend-hwcomposer
 Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: kwin-hwcomposer-backend (<< 4:5.3.90+git201507070700)
-Replaces: kwin-hwcomposer-backend (<< 4:5.3.90+git20150707070)
+Breaks: kwin-hwcomposer-backend (<< 4:5.3.90+git20150807)
+Replaces: kwin-hwcomposer-backend (<< 4:5.3.90+git20150807)
 Provides: kwin-wayland-backend
 Description: KDE window manager hwcompositor plugin
  KWin (pronounced as one syllable "kwin") is the window
