@@ -350,8 +350,8 @@ Architecture: all
 Depends: kwin-x11, ${misc:Depends}
 Priority: extra
 Section: oldlibs
-Description: Transitional for kwin-x11
- This package is a transitional to depend on the renamed kwin-x11 and
+Description: Transitional dummy for kwin-x11
+ This package is a transitional dummy to depend on the renamed kwin-x11 and
  can be removed.
 
 Package: kwin-dbg
