@@ -1,3 +1,10 @@
+kwin (4:5.3.95-0ubuntu3) wily; urgency=medium
+
+  * Build-depend on libhybris-dev on amd64, i386, armhf only.
+  * Build kwin-wayland-backend-hwcomposer on amd64, i386, armhf only.
+
+ -- Matthias Klose <ubuntu@ubuntu.com>  Tue, 11 Aug 2015 15:38:07 +0000
+
 kwin (4:5.3.95-0ubuntu2) wily; urgency=medium
 
   * Bump kwayland build-dep

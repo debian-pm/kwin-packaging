@@ -13,7 +13,7 @@ Build-Depends: cmake (>= 2.8.12),
                libegl1-mesa-dev (>= 1.2~),
                libepoxy-dev (>= 1.2),
                libgbm-dev,
-               libhybris-dev,
+               libhybris-dev [amd64 armhf i386],
                libice-dev,
                libinput-dev (>= 0.10~),
                libkdecorations2-dev,
@@ -246,7 +246,7 @@ Description: transitional dummy package
 
 Package: kwin-wayland-backend-hwcomposer
 Section: libs
-Architecture: any
+Architecture: amd64 armhf i386
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: kwin-hwcomposer-backend (<< 4:5.3.90+git20150807)
 Replaces: kwin-hwcomposer-backend (<< 4:5.3.90+git20150807)
