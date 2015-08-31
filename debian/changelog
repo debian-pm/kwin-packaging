@@ -4,6 +4,14 @@ kwin (4:5.4.0-0ubuntu1) wily; urgency=medium
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 31 Aug 2015 15:52:30 +0100
 
+kwin (4:5.3.95-0ubuntu6) wily; urgency=medium
+
+  * Third try, to adopt kdecorationv5. Uploaders should wait until
+    the dependency is built on all architectures, or set a build
+    dependency.
+
+ -- Matthias Klose <doko@ubuntu.com>  Sun, 30 Aug 2015 16:55:32 +0200
+
 kwin (4:5.3.95-0ubuntu5) wily; urgency=medium
 
   * No change rebuild to adopt kdecorationv5. 2nd try after v5 was
