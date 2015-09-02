@@ -170,7 +170,7 @@ Description: KDE window manager effect builtins library
  .
  This package is part of the KDE base workspace module.
 
-Package: libkwineffects6
+Package: libkwineffects7
 Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
