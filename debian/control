@@ -187,7 +187,7 @@ Description: KDE window manager effects library
  .
  This package is part of the KDE base workspace module.
 
-Package: libkwinglutils6
+Package: libkwinglutils7
 Section: libs
 Architecture: amd64 arm64 i386 powerpc ppc64el
 Depends: ${misc:Depends}, ${shlibs:Depends}
@@ -204,7 +204,7 @@ Description: KDE window manager gl utils library
  .
  This package is part of the KDE base workspace module.
 
-Package: libkwinglesutils6
+Package: libkwinglesutils7
 Section: libs
 Architecture: armhf
 Depends: ${misc:Depends}, ${shlibs:Depends}
@@ -221,7 +221,7 @@ Description: KDE window manager gl utils library
  .
  This package is part of the KDE base workspace module.
 
-Package: libkwinxrenderutils6
+Package: libkwinxrenderutils7
 Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
