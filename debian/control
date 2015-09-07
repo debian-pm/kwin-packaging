@@ -174,8 +174,9 @@ Package: libkwineffects7
 Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libkwineffects5 (<< 4:5.2.0)
-Replaces: libkwineffects5 (<< 4:5.2.0)
+Breaks: libkwineffects5 (<< 4:5.2.0), libkwineffects6 (<< 4:5.4.1+git20150907)
+Replaces: libkwineffects5 (<< 4:5.2.0),
+          libkwineffects6 (<< 4:5.4.1+git20150907)
 Description: KDE window manager effects library
  KWin (pronounced as one syllable "kwin") is the window
  manager for the KDE Plasma Desktop. It gives you complete
@@ -191,8 +192,9 @@ Package: libkwinglutils7
 Section: libs
 Architecture: amd64 arm64 i386 powerpc ppc64el
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libkwinglutils5 (<< 4:5.2.0)
-Replaces: libkwinglutils5 (<< 4:5.2.0)
+Breaks: libkwinglutils5 (<< 4:5.2.0), libkwinglutils6 (<< 4:5.4.1+git20150907)
+Replaces: libkwinglutils5 (<< 4:5.2.0),
+          libkwinglutils6 (<< 4:5.4.1+git20150907)
 Description: KDE window manager gl utils library
  KWin (pronounced as one syllable "kwin") is the window
  manager for the KDE Plasma Desktop. It gives you complete
@@ -208,8 +210,10 @@ Package: libkwinglesutils7
 Section: libs
 Architecture: armhf
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libkwinglesutils5 (<< 4:5.2.0)
-Replaces: libkwinglesutils5 (<< 4:5.2.0)
+Breaks: libkwinglesutils5 (<< 4:5.2.0),
+        libkwinglesutils6 (<< 4:5.4.1+git20150907)
+Replaces: libkwinglesutils5 (<< 4:5.2.0),
+          libkwinglesutils6 (<< 4:5.4.1+git20150907)
 Description: KDE window manager gl utils library
  KWin (pronounced as one syllable "kwin") is the window
  manager for the KDE Plasma Desktop. It gives you complete
@@ -225,8 +229,10 @@ Package: libkwinxrenderutils7
 Section: libs
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libkwinxrenderutils5 (<< 4:5.2.0)
-Replaces: libkwinxrenderutils5 (<< 4:5.2.0)
+Breaks: libkwinxrenderutils5 (<< 4:5.2.0),
+        libkwinxrenderutils6 (<< 4:5.4.1+git20150907)
+Replaces: libkwinxrenderutils5 (<< 4:5.2.0),
+          libkwinxrenderutils6 (<< 4:5.4.1+git20150907)
 Description: KDE window manager render utils library
  KWin (pronounced as one syllable "kwin") is the window
  manager for the KDE Plasma Desktop. It gives you complete
