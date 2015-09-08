@@ -1,8 +1,8 @@
-kwin (4:5.4.1-0ubuntu1) UNRELEASED; urgency=medium
+kwin (4:5.4.1-0ubuntu1) wily; urgency=medium
 
   * new upstream release
 
- -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 03 Sep 2015 13:47:03 +0100
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 08 Sep 2015 10:18:51 +0100
 
 kwin (4:5.4.0-0ubuntu1) wily; urgency=medium
 
