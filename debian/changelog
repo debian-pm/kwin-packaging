@@ -1,3 +1,10 @@
+kwin (4:5.4.80-0ubuntu1) UNRELEASED; urgency=medium
+
+  [ Harald Sitter ]
+  * Multi-archify the package
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 15 Sep 2015 10:52:54 +0100
+
 kwin (4:5.4.1-0ubuntu1) wily; urgency=medium
 
   * new upstream release

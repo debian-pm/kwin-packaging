@@ -75,6 +75,7 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/plasma/kwin.git
 Package: kwin-dev
 Section: libdevel
 Architecture: any
+Multi-Arch: no
 Depends: kwin-common (= ${binary:Version}),
          libegl1-mesa-dev (>= 1.2~),
          libepoxy-dev (>= 1.2),
@@ -98,6 +99,7 @@ Description: KDE window manager - devel files
 
 Package: kwin-common
 Architecture: any
+Multi-Arch: same
 Depends: kwin-data (= ${source:Version}),
          qml-module-org-kde-kquickcontrolsaddons,
          qml-module-qtmultimedia,
@@ -120,6 +122,7 @@ Description: KDE window manager, common files
 
 Package: kwin-x11
 Architecture: any
+Multi-Arch: foreign
 Depends: kwin-common (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Provides: kwin
 Breaks: kwin (<< 4:5.3.2+git20150715)
@@ -137,6 +140,7 @@ Description: KDE window manager, X11 version
 
 Package: kwin-wayland
 Architecture: any
+Multi-Arch: foreign
 Depends: kwin-common (= ${binary:Version}),
          kwin-wayland-backend-drm (= ${binary:Version}) | kwin-wayland-backend-hwcomposer (= ${binary:Version}) | kwin-wayland-backend,
          ${misc:Depends},
@@ -158,6 +162,7 @@ Description: KDE window manager, wayland version
 Package: libkwin4-effect-builtins1
 Section: libs
 Architecture: any
+Multi-Arch: same
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: KDE window manager effect builtins library
  KWin (pronounced as one syllable "kwin") is the window
@@ -173,6 +178,7 @@ Description: KDE window manager effect builtins library
 Package: libkwineffects7
 Section: libs
 Architecture: any
+Multi-Arch: same
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libkwineffects5 (<< 4:5.2.0), libkwineffects6 (<< 4:5.4.1+git20150907)
 Replaces: libkwineffects5 (<< 4:5.2.0),
@@ -191,6 +197,7 @@ Description: KDE window manager effects library
 Package: libkwinglutils7
 Section: libs
 Architecture: amd64 arm64 i386 powerpc ppc64el
+Multi-Arch: same
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libkwinglutils5 (<< 4:5.2.0), libkwinglutils6 (<< 4:5.4.1+git20150907)
 Replaces: libkwinglutils5 (<< 4:5.2.0),
@@ -209,6 +216,7 @@ Description: KDE window manager gl utils library
 Package: libkwinglesutils7
 Section: libs
 Architecture: armhf
+Multi-Arch: same
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libkwinglesutils5 (<< 4:5.2.0),
         libkwinglesutils6 (<< 4:5.4.1+git20150907)
@@ -228,6 +236,7 @@ Description: KDE window manager gl utils library
 Package: libkwinxrenderutils7
 Section: libs
 Architecture: any
+Multi-Arch: same
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libkwinxrenderutils5 (<< 4:5.2.0),
         libkwinxrenderutils6 (<< 4:5.4.1+git20150907)
@@ -247,6 +256,7 @@ Description: KDE window manager render utils library
 Package: kwin-hwcomposer-backend
 Depends: kwin-wayland-backend-hwcomposer, ${misc:Depends}
 Architecture: all
+Multi-Arch: foreign
 Priority: extra
 Section: oldlibs
 Description: transitional dummy package
@@ -255,6 +265,7 @@ Description: transitional dummy package
 Package: kwin-wayland-backend-hwcomposer
 Section: libs
 Architecture: amd64 armhf i386
+Multi-Arch: same
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: kwin-hwcomposer-backend (<< 4:5.3.90+git20150807)
 Replaces: kwin-hwcomposer-backend (<< 4:5.3.90+git20150807)
@@ -273,6 +284,7 @@ Description: KDE window manager hwcompositor plugin
 Package: kwin-wayland-backend-drm
 Section: libs
 Architecture: any
+Multi-Arch: same
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Provides: kwin-wayland-backend
 Description: KDE window manager drm plugin
@@ -289,6 +301,7 @@ Description: KDE window manager drm plugin
 Package: kwin-wayland-backend-fbdev
 Section: libs
 Architecture: any
+Multi-Arch: same
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Provides: kwin-wayland-backend
 Description: KDE window manager fbdev plugin
@@ -305,6 +318,7 @@ Description: KDE window manager fbdev plugin
 Package: kwin-wayland-backend-x11
 Section: libs
 Architecture: any
+Multi-Arch: same
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Provides: kwin-wayland-backend
 Description: KDE window manager x11 plugin
@@ -321,6 +335,7 @@ Description: KDE window manager x11 plugin
 Package: kwin-wayland-backend-wayland
 Section: libs
 Architecture: any
+Multi-Arch: same
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Provides: kwin-wayland-backend
 Description: KDE window manager nested wayland plugin
@@ -336,12 +351,15 @@ Description: KDE window manager nested wayland plugin
 
 Package: kwin-data
 Architecture: all
+Multi-Arch: foreign
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Recommends: plasma-framework,
             qml-module-qtmultimedia,
             qml-module-qtquick-layouts,
             qml-module-qtquick-window2,
             qml-module-qtquick2
+Breaks: kwin-common (<< 4:5.4.1+git20150913)
+Replaces: kwin-common (<< 4:5.4.1+git20150913)
 Description: KDE window manager data files
  KWin (pronounced as one syllable "kwin") is the window
  manager for the KDE Plasma Desktop. It gives you complete
@@ -355,6 +373,7 @@ Description: KDE window manager data files
 
 Package: kwin
 Architecture: all
+Multi-Arch: foreign
 Depends: kwin-x11, ${misc:Depends}
 Priority: extra
 Section: oldlibs
@@ -366,6 +385,7 @@ Package: kwin-dbg
 Section: debug
 Priority: extra
 Architecture: any
+Multi-Arch: same
 Recommends: qtbase5-dbg
 Depends: kwin-x11 (= ${binary:Version}) | kwin-wayland (= ${binary:Version}),
          ${misc:Depends}
