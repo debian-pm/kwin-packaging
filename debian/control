@@ -122,7 +122,7 @@ Description: KDE window manager, common files
 
 Package: kwin-x11
 Architecture: any
-Multi-Arch: foreign
+Multi-Arch: no
 Depends: kwin-common (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Provides: kwin
 Breaks: kwin (<< 4:5.3.2+git20150715)
@@ -140,7 +140,7 @@ Description: KDE window manager, X11 version
 
 Package: kwin-wayland
 Architecture: any
-Multi-Arch: foreign
+Multi-Arch: no
 Depends: kwin-common (= ${binary:Version}),
          kwin-wayland-backend-drm (= ${binary:Version}) | kwin-wayland-backend-hwcomposer (= ${binary:Version}) | kwin-wayland-backend,
          ${misc:Depends},
@@ -373,7 +373,7 @@ Description: KDE window manager data files
 
 Package: kwin
 Architecture: all
-Multi-Arch: foreign
+Multi-Arch: no
 Depends: kwin-x11, ${misc:Depends}
 Priority: extra
 Section: oldlibs
