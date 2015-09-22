@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:5.4.80+git20150917.2123+15.10 amd64 i386
+# SymbolsHelper-Confirmed: 4:5.4.1+git20150919.0159 amd64 i386
 libkwineffects.so.7 libkwineffects7 #MINVER#
  _ZN4KWin11EffectFrame15enableCrossFadeEb@Base 4:5.1.95+git20150122
  _ZN4KWin11EffectFrame20setCrossFadeProgressEd@Base 4:5.1.95+git20150122
