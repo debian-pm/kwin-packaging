@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:5.3.2 amd64
+# SymbolsHelper-Confirmed: 4:5.4.1+git20150919.0159 amd64 i386
 libkwinxrenderutils.so.6 libkwinxrenderutils6 #MINVER#
  _ZN4KWin11preMultiplyERK6QColorf@Base 4:5.1.95+git20150122
  _ZN4KWin11xRenderFillERK18xcb_render_color_t@Base 4:5.1.95+git20150122
@@ -16,8 +16,6 @@ libkwinxrenderutils.so.6 libkwinxrenderutils6 #MINVER#
  _ZN4KWin14XRenderPictureC1Eji@Base 4:5.1.95+git20150122
  _ZN4KWin14XRenderPictureC2ERK6QImage@Base 4:5.1.95+git20150122
  _ZN4KWin14XRenderPictureC2Eji@Base 4:5.1.95+git20150122
- (optional)_ZN4KWin14XRenderPictureD1Ev@Base 4:5.1.95+git20150122
- (optional)_ZN4KWin14XRenderPictureD2Ev@Base 4:5.1.95+git20150122
  _ZN4KWin16xRenderOffscreenEv@Base 4:5.1.95+git20150122
  _ZN4KWin16xRenderPopTargetEv@Base 4:5.1.95+git20150122
  _ZN4KWin17xRenderPushTargetEPNS_14XRenderPictureE@Base 4:5.1.95+git20150122
