@@ -5,6 +5,12 @@ kwin (4:5.4.80-0ubuntu1) UNRELEASED; urgency=medium
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 15 Sep 2015 10:52:54 +0100
 
+kwin (4:5.4.2-0ubuntu1) UNRELEASED; urgency=medium
+
+  * Vivid backport
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 05 Oct 2015 11:47:48 -0700
+
 kwin (4:5.4.2-0ubuntu1) wily; urgency=medium
 
   * New upstream release
