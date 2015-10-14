@@ -15,7 +15,7 @@ Build-Depends: cmake (>= 2.8.12),
                libfontconfig1-dev,
                libfreetype6-dev,
                libgbm-dev,
-               libhybris-dev [amd64 armhf i386],
+               libhybris-dev [armhf],
                libice-dev,
                libinput-dev (>= 0.10~),
                libkdecorations2-dev,
@@ -264,7 +264,7 @@ Description: transitional dummy package
 
 Package: kwin-wayland-backend-hwcomposer
 Section: libs
-Architecture: amd64 armhf i386
+Architecture: armhf
 Multi-Arch: same
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: kwin-hwcomposer-backend (<< 4:5.3.90+git20150807)
