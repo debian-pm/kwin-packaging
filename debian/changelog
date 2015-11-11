@@ -1,3 +1,9 @@
+kwin (4:5.4.2-0ubuntu3) xenial; urgency=medium
+
+  * Cherry pick ee2ef307 from debian master to fix symbols broken by epoxy 1.3
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Thu, 12 Nov 2015 00:41:02 +0100
+
 kwin (4:5.4.2-0ubuntu2) xenial; urgency=medium
 
   * Fix autopackagetests by adding allow-stderr to the requirements.
