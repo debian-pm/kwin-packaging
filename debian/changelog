@@ -7,14 +7,22 @@ kwin (4:5.4.80-0ubuntu1) UNRELEASED; urgency=medium
   * Only build kwin-wayland-backend-hwcomposer on armhf now that libhybris
     is arm only
 
+  [ Scarlett Clark ]
+  * Fix merge madness. 
+
  -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 15 Sep 2015 10:52:54 +0100
 
 kwin (4:5.4.3-0ubuntu1) UNRELEASED; urgency=medium
 
-  * Vivid backport
   * New upstream bugfix release
 
  -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 09 Nov 2015 16:35:23 -0800
+
+kwin (4:5.4.2-0ubuntu3) xenial; urgency=medium
+
+  * Fix symbols that were changed by epoxy 1.3
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Thu, 12 Nov 2015 00:41:02 +0100
 
 kwin (4:5.4.2-0ubuntu2) xenial; urgency=medium
 
