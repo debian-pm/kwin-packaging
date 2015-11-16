@@ -201,7 +201,6 @@ Description: KDE window manager effects library
 
 Package: libkwinglutils8
 Section: libs
-Architecture: amd64 arm64 i386 powerpc ppc64el
 Multi-Arch: same
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libkwinglutils5 (<< 4:5.2.0),
