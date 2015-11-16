@@ -10,6 +10,10 @@ kwin (4:5.4.80-0ubuntu1) UNRELEASED; urgency=medium
   [ Scarlett Clark ]
   * Fix merge madness. 
 
+  [ Rohan Garg ]
+  * so version bump for libkwinglutils, libkwineffect and libkwinxrenderutils
+  * Make libkwinglutils Arch any
+
  -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 15 Sep 2015 10:52:54 +0100
 
 kwin (4:5.4.3-0ubuntu1) UNRELEASED; urgency=medium
