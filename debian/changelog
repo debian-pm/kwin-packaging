@@ -15,8 +15,12 @@ kwin (4:5.4.80-0ubuntu1) UNRELEASED; urgency=medium
 kwin (4:5.4.3-0ubuntu1) UNRELEASED; urgency=medium
 
   * New upstream bugfix release
+  * New upstream bugfix release
 
- -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 09 Nov 2015 16:35:23 -0800
+  [ Philip Muškovac ]
+  * New upstream bugfix release (LP: #1518598)
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sun, 22 Nov 2015 14:12:24 +0100
 
 kwin (4:5.4.2-0ubuntu3) xenial; urgency=medium
 
