@@ -321,7 +321,7 @@ Package: kwin-wayland-backend-x11
 Section: libs
 Architecture: any
 Multi-Arch: same
-Depends: ${misc:Depends}, ${shlibs:Depends}
+Depends: xwayland, ${misc:Depends}, ${shlibs:Depends}
 Provides: kwin-wayland-backend
 Description: KDE window manager x11 plugin
  KWin (pronounced as one syllable "kwin") is the window
