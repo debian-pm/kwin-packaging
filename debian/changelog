@@ -1,3 +1,9 @@
+kwin (4:5.5.1-0ubuntu1) UNRELEASED; urgency=medium
+
+  * New upstream release Xenial.
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 18 Dec 2015 12:44:12 -0800
+
 kwin (4:5.4.80-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Harald Sitter ]
