@@ -1,3 +1,6 @@
+etc/xdg/aurorae.knsrc
+etc/xdg/kwin*.knsrc
+etc/xdg/org_kde_kwin.categories
 usr/share/config.kcfg/kwin.kcfg
 usr/share/doc/*/*/kcontrol/
 usr/share/icons/*/*/apps/kwin.*
