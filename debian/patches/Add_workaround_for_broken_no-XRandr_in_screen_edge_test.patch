@@ -1,0 +1,77 @@
+From eda4f6103707bc425dec884c3fe4dac1077b21a7 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Martin=20Gr=C3=A4=C3=9Flin?= <mgraesslin@kde.org>
+Date: Wed, 30 Sep 2015 15:06:01 +0200
+Subject: [PATCH] [autotest] Add workaround for broken no-XRandr in screen edge
+ test
+
+With Qt 5.5 the physicalSize of a screen is broken if the X system does
+not provide the XRandR extension. This caused our screen edge test to
+fail on the CI system (Xvfb) due to approach window being based on the
+dpi.
+
+The problem itself is addressed for Qt in:
+https://codereview.qt-project.org/126808
+
+This change just worksaround till the change has made it into our CI
+system (at which point the expected fails will break).
+
+Reviewed-By: David Edmundson
+---
+ autotests/CMakeLists.txt        |  8 ++++++++
+ autotests/test_screen_edges.cpp | 10 ++++++++++
+ 2 files changed, 18 insertions(+)
+
+diff --git a/autotests/CMakeLists.txt b/autotests/CMakeLists.txt
+index ea638eb..edc9dce 100644
+--- a/autotests/CMakeLists.txt
++++ b/autotests/CMakeLists.txt
+@@ -270,6 +270,7 @@ set( testScreenEdges_SRCS
+     ../screens.cpp
+     ../screenedge.cpp
+     ../virtualdesktops.cpp
++    ../xcbutils.cpp # init of extensions
+ )
+ kconfig_add_kcfg_files(testScreenEdges_SRCS ../settings.kcfgc)
+ qt5_add_dbus_interface( testScreenEdges_SRCS ${CMAKE_CURRENT_SOURCE_DIR}/../org.freedesktop.ScreenSaver.xml screenlocker_interface)
+@@ -286,6 +287,13 @@ target_link_libraries(testScreenEdges
+     KF5::GlobalAccel
+     KF5::WindowSystem
+     XCB::XCB
++    XCB::RANDR
++    XCB::XFIXES
++    XCB::SYNC
++    XCB::COMPOSITE
++    XCB::DAMAGE
++    XCB::GLX
++    XCB::SHM
+ )
+ 
+ add_test(kwin_testScreenEdges testScreenEdges)
+diff --git a/autotests/test_screen_edges.cpp b/autotests/test_screen_edges.cpp
+index 2e3a2f7..a776d3a 100644
+--- a/autotests/test_screen_edges.cpp
++++ b/autotests/test_screen_edges.cpp
+@@ -305,6 +305,11 @@ void TestScreenEdges::testCreatingInitialEdges()
+     // approach windows for edges not created as screen too small
+     s->updateLayout();
+     auto edgeWindows = s->windows();
++#if (QT_VERSION >= QT_VERSION_CHECK(5, 5, 0))
++    if (!Xcb::Extensions::self()->isRandrAvailable()) {
++        QEXPECT_FAIL("", "Broken on no xrandr systems in Qt 5.5", Abort);
++    }
++#endif
+     QCOMPARE(edgeWindows.size(), 12);
+ 
+     auto testWindowGeometry = [&](int index) {
+@@ -423,6 +428,11 @@ void TestScreenEdges::testCallback()
+     auto it = std::find_if(edges.constBegin(), edges.constEnd(), [](Edge *e) {
+         return e->isScreenEdge() && e->isLeft() && e->approachGeometry().bottom() < 768;
+     });
++#if (QT_VERSION >= QT_VERSION_CHECK(5, 5, 0))
++    if (!Xcb::Extensions::self()->isRandrAvailable()) {
++        QEXPECT_FAIL("", "Broken on no xrandr systems in Qt 5.5", Abort);
++    }
++#endif
+     QVERIFY(it != edges.constEnd());
+ 
+     xcb_enter_notify_event_t event;
