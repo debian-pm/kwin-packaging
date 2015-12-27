@@ -5,6 +5,19 @@ kwin (4:5.5.1-0ubuntu1) UNRELEASED; urgency=medium
 
  -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 18 Dec 2015 12:44:12 -0800
 
+kwin (4:5.4.3-0ubuntu3) xenial; urgency=medium
+
+  * Add_workaround_for_broken_no-XRandr_in_screen_edge_test.patch:
+    Cherry-pick from upstream to fix a test issue with Qt 5.5 (LP: #1522466)
+
+ -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Thu, 03 Dec 2015 17:49:43 +0200
+
+kwin (4:5.4.3-0ubuntu2) xenial; urgency=medium
+
+  * Rebuild against Qt 5.5.1.
+
+ -- Timo Jyrinki <timo-jyrinki@ubuntu.com>  Mon, 30 Nov 2015 15:57:43 +0200
+
 kwin (4:5.4.80-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Harald Sitter ]
@@ -21,7 +34,8 @@ kwin (4:5.4.80-0ubuntu1) UNRELEASED; urgency=medium
 
 kwin (4:5.4.3-0ubuntu1) xenial; urgency=medium
 
-  * New upstream bugfix release
+  [ Scarlett Clark ]
+  * Vivid backport
   * New upstream bugfix release
 
   [ Philip Muškovac ]
