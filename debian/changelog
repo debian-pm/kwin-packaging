@@ -1,9 +1,15 @@
 kwin (4:5.5.1-0ubuntu1) UNRELEASED; urgency=medium
 
   * New upstream release Xenial.
-  * Batchpatch symbols amd64,i386. 
+  * Batchpatch symbols amd64,i386.
 
  -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 18 Dec 2015 12:44:12 -0800
+
+kwin (4:5.4.3-0ubuntu4) xenial; urgency=medium
+
+  * Build libkwinglutils6 on s390x as well as other non-armhf architectures.
+
+ -- Colin Watson <cjwatson@ubuntu.com>  Thu, 24 Dec 2015 04:41:10 +0000
 
 kwin (4:5.4.3-0ubuntu3) xenial; urgency=medium
 
