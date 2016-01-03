@@ -9,6 +9,9 @@ kwin (4:5.5.2-0ubuntu1) UNRELEASED; urgency=medium
   * Removed Add_workaround_for_broken_no-XRandr_in_screen_edge_test.patch
   * Added missing kwin_scripts.mo files to kwin-data.install
 
+  [ Bhushan Shah ]
+  * Build libkwinglutils7 on any architecture, unbreaks build on armhf
+
  -- Clive Johnston <clivejo@aol.com>  Tue, 29 Dec 2015 17:46:44 +0000
 
 kwin (4:5.4.3-0ubuntu4) xenial; urgency=medium

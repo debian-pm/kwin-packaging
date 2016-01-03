@@ -200,7 +200,7 @@ Description: KDE window manager effects library
 
 Package: libkwinglutils7
 Section: libs
-Architecture: amd64 arm64 i386 powerpc ppc64el s390x 
+Architecture: any
 Multi-Arch: same
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Breaks: libkwinglutils5 (<< 4:5.2.0), libkwinglutils6 (<< 4:5.4.1+git20150907)
