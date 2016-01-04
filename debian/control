@@ -330,23 +330,6 @@ Description: KDE window manager nested wayland plugin
  .
  This package is part of the KDE base workspace module
 
-Package: libkwinxrenderutils6
-Section: libs
-Architecture: any
-Multi-Arch: same
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Provides: kwin-wayland-backend
-Description: KDE window manager drm plugin
- KWin (pronounced as one syllable "kwin") is the window
- manager for the KDE Plasma Desktop. It gives you complete
- control over your windows, making sure they're not in the way
- but aid you in your task. It paints the window decoration,
- the bar on top of every window with (configurable) buttons
- like close, maximize and minimize. It also handles placing
- of windows and switching between them.
- .
- This package is part of the KDE base workspace module
-
 Package: kwin-wayland-backend-virtual
 Section: libs
 Architecture: any
@@ -412,19 +395,19 @@ Description: KDE window manager - debug files
  manager for the KDE Plasma Desktop. It gives you complete
  control over your windows, making sure they're not in the way
  but aid you in your task. It paints the window decoration,
- the bar on top of every window with (configurable) buttons
- like close, maximize and minimize. It also handles placing
- of windows and switching between them.
- .
- This package contains the debugging symbols.
-
-Package: kde-window-manager
-Section: oldlibs
-Priority: extra
-Architecture: all
-Depends: kwin-x11 (>= 4:5.3.2-4~)
-Description: transitional package for kwin-x11
- This transitional package allows one to migrate to the packages providing
- the X11 version of the KDE window manager.
- .
- It can be safely removed after the installation.
+Source: kwin
+Section: kde
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Maximiliano Curia <maxy@debian.org>
+Build-Depends: cmake (>= 2.8.12),
+               debhelper (>= 9),
+               extra-cmake-modules (>= 5.17.0~),
+               kdoctools-dev (>= 5.17.0~),
+               kinit-dev (>= 5.17.0~),
+               kio-dev (>= 5.17.0~),
+               kscreenlocker-dev (>= 5.5.1~),
+               kwayland-dev (>= 4:5.5.1~),
+               libegl1-mesa-dev (>= 1.2~),
+               libepoxy-dev (>= 1.2),
