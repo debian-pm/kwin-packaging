@@ -17,6 +17,7 @@ kwin (4:5.5.2-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Scarlett Clark ]
   * Fix duplicate breaks/replace. 
+  * Fix merge duplications. 
 
  -- Clive Johnston <clivejo@aol.com>  Tue, 29 Dec 2015 17:46:44 +0000
 
