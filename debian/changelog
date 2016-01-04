@@ -3,6 +3,9 @@ kwin (4:5.5.2-0ubuntu1) UNRELEASED; urgency=medium
   [ Scarlett Clark ]
   * New upstream release Xenial.
   * Batchpatch symbols amd64,i386.
+  * Debian Merge: Remaining changes:
+     Changes for new release.
+     Build libkwinglutils7 on any architecture, unbreaks build on armhf
 
   [ Clive Johnston ]
   * new upstream release
@@ -11,6 +14,9 @@ kwin (4:5.5.2-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Bhushan Shah ]
   * Build libkwinglutils7 on any architecture, unbreaks build on armhf
+
+  [ Scarlett Clark ]
+  * 
 
  -- Clive Johnston <clivejo@aol.com>  Tue, 29 Dec 2015 17:46:44 +0000
 
@@ -47,6 +53,13 @@ kwin (4:5.4.80-0ubuntu1) UNRELEASED; urgency=medium
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 15 Sep 2015 10:52:54 +0100
 
+kwin (4:5.4.3-1~) UNRELEASED; urgency=medium
+
+  * New upstream release (5.4.3).
+  * Update symbols files from buildds logs (4:5.4.2-1).
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 05 Nov 2015 16:55:10 +0100
+
 kwin (4:5.4.3-0ubuntu1) xenial; urgency=medium
 
   [ Scarlett Clark ]
@@ -57,6 +70,24 @@ kwin (4:5.4.3-0ubuntu1) xenial; urgency=medium
   * New upstream bugfix release (LP: #1518598)
 
  -- Philip Muškovac <yofel@kubuntu.org>  Sun, 22 Nov 2015 16:35:18 +0100
+
+kwin (4:5.4.2-1) unstable; urgency=medium
+
+  [ Luigi Toscano ]
+  * Changes to Recommends for kwin-common:
+    - add libqt5multimedia5-plugins (it enables the playback of the
+      preview of KWin effects);
+    - remove libqt5multimedia5 (it is dependency of the required
+      qml-module-qtmultimedia package).
+
+  [ Maximiliano Curia ]
+  * New upstream release (5.4.2).
+  * Update symbols files from buildds logs (4:5.4.1-1).
+  * Drop upstream patch:
+    upstream_fake_a_leave_event_for_the_decoration_when_client_is_left.d
+    iff
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 06 Oct 2015 07:51:48 +0200
 
 kwin (4:5.4.2-0ubuntu3) xenial; urgency=medium
 
@@ -76,11 +107,34 @@ kwin (4:5.4.2-0ubuntu1) wily; urgency=medium
 
  -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 02 Oct 2015 15:57:02 +0100
 
+kwin (4:5.4.1-1) unstable; urgency=medium
+
+  * New upstream release (5.4.1).
+  * New upstream patch:
+    upstream_fake_a_leave_event_for_the_decoration_when_client_is_left.d
+    iff
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 11 Sep 2015 18:44:56 +0200
+
 kwin (4:5.4.1-0ubuntu1) wily; urgency=medium
 
   * new upstream release
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 08 Sep 2015 10:18:51 +0100
+
+kwin (4:5.4.0-2) unstable; urgency=medium
+
+  [ Felix Geyer ]
+  * Tighten the dependency of kde-window-manager on kwin-x11 to the version
+    that provides the /usr/bin/kwin symlink.
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 06 Sep 2015 12:20:03 +0200
+
+kwin (4:5.4.0-1) unstable; urgency=medium
+
+  * New upstream release (5.4.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 04 Sep 2015 11:06:10 +0200
 
 kwin (4:5.4.0-0ubuntu1) wily; urgency=medium
 
@@ -134,6 +188,54 @@ kwin (4:5.3.90-0ubuntu1) wily; urgency=medium
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Sat, 06 Jun 2015 02:44:00 +0200
 
+kwin (4:5.3.2-4) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Scott Kitterman ]
+  * Add debian/kwin-x11.links to add symlink for usr/bin/kiwn so that kwin
+    will be properly started with KDE 4 (Plasma 1) (Closes: #793026)
+  * Drop #793026 from the debian/changelog entry for the last upload, since it
+    did not fix the bug
+
+  [ Felix Geyer ]
+  * Update symbols files for gcc 5.
+  * Make kwin-x11 break/replace kde-window-manager (<< 4:5) because of the
+    /usr/bin/kwin file conflict.
+
+ -- Felix Geyer <fgeyer@debian.org>  Wed, 26 Aug 2015 01:18:42 +0200
+
+kwin (4:5.3.2-3) unstable; urgency=high
+
+  [ Maximiliano Curia ]
+  * kwin-wayland: Add qtwayland5 dependency, for the wayland qt5 plugin.
+
+  [ Scott Kitterman ]
+  * Urgency high for RC but fix in testing
+  * Remove obsolete kwin alternative and add new alternative for kwin_x11 so
+    kwin will work as x-window-manager (Closes: #792849, #793997)
+
+ -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Wed, 29 Jul 2015 16:43:28 -0400
+
+kwin (4:5.3.2-2) unstable; urgency=medium
+
+  * Adds missing arches to libkwingl*utils6. (Closes: #792481) Thanks to
+    Dejan Latinovic, and Scott Kitterman
+  * Add a kde-window-manager transitional package.
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 18 Jul 2015 18:47:45 +0200
+
+kwin (4:5.3.2-1) unstable; urgency=medium
+
+  * New upstream release (5.3.0).
+  * Update symbols files.
+  * New upstream release (5.3.1).
+  * New upstream release (5.3.2).
+  * Add the missing Breaks/Replaces.
+  * Update copyright information.
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 01 Jul 2015 12:20:41 +0200
+
 kwin (4:5.3.2-0ubuntu2) wily; urgency=medium
 
   * Non-maintainer upload.
@@ -148,12 +250,46 @@ kwin (4:5.3.2-0ubuntu1) UNRELEASED; urgency=medium
 
  -- Scarlett Clark <sgclark@kubuntu.org>  Thu, 02 Jul 2015 11:40:54 -0700
 
+<<<<<<<
 kwin (4:5.3.2-0ubuntu1) wily; urgency=medium
 
   * New upstream release
 
  -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 02 Jul 2015 12:29:50 +0000
 
+=======
+>>>>>>>
+<<<<<<<
+kwin (4:5.3.1-0ubuntu1) wily; urgency=medium
+
+  [ Scarlett Clark ]
+  * Manual merge kubuntu_stable.
+
+  [ Jonathan Riddell ]
+  * Plasma 5.3 beta
+  * new upstream release
+
+  [ Scarlett Clark ]
+  * Vivid backport
+
+  [ Jonathan Riddell ]
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 04 Jun 2015 20:27:57 +0200
+
+=======
+>>>>>>>
+<<<<<<<
+kwin (4:5.3.1-1~) wily; urgency=medium
+
+  * New upstream release (5.3.0).
+  * Update symbols files.
+  * New upstream release (5.3.1).
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 05 Jun 2015 11:52:39 +0200
+
+=======
+>>>>>>>
 kwin (4:5.3.1-0ubuntu3) wily; urgency=medium
 
   * No-change rebuild against Qt 5.4.2.
@@ -175,23 +311,15 @@ kwin (4:5.3.1-0ubuntu1) wily; urgency=medium
   [ Jonathan Riddell ]
   * New upstream release
 
- -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 04 Jun 2015 20:27:57 +0200
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 05 Jun 2015 02:34:16 +0200
 
 kwin (4:5.2.2a-0ubuntu1) vivid; urgency=medium
 
-  * New upstream release 
-  * New upstream tar. 
+  * New upstream release
+  * New upstream tar.
   * Append a to version so launchpad accepts new tar.
 
  -- Scarlett Clark <sgclark@kubuntu.org>  Tue, 24 Mar 2015 07:33:08 -0700
-
-kwin (4:5.3.1-1~) wily; urgency=medium
-
-  * New upstream release (5.3.0).
-  * Update symbols files.
-  * New upstream release (5.3.1).
-
- -- Maximiliano Curia <maxy@debian.org>  Fri, 05 Jun 2015 11:52:39 +0200
 
 kwin (4:5.2.2-1) experimental; urgency=medium
 
@@ -204,8 +332,8 @@ kwin (4:5.2.2-1) experimental; urgency=medium
 
 kwin (4:5.2.1-0ubuntu1) vivid; urgency=medium
 
-  * New upstream release 
-  * Batchpatch symbols file. 
+  * New upstream release
+  * Batchpatch symbols file.
 
  -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 23 Feb 2015 09:42:26 -0800
 
