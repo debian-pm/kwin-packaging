@@ -16,7 +16,7 @@ kwin (4:5.5.2-0ubuntu1) UNRELEASED; urgency=medium
   * Build libkwinglutils7 on any architecture, unbreaks build on armhf
 
   [ Scarlett Clark ]
-  * 
+  * Fix duplicate breaks/replace. 
 
  -- Clive Johnston <clivejo@aol.com>  Tue, 29 Dec 2015 17:46:44 +0000
 
