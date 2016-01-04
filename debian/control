@@ -395,19 +395,3 @@ Description: KDE window manager - debug files
  manager for the KDE Plasma Desktop. It gives you complete
  control over your windows, making sure they're not in the way
  but aid you in your task. It paints the window decoration,
-Source: kwin
-Section: kde
-Priority: optional
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-XSBC-Original-Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-Uploaders: Maximiliano Curia <maxy@debian.org>
-Build-Depends: cmake (>= 2.8.12),
-               debhelper (>= 9),
-               extra-cmake-modules (>= 5.17.0~),
-               kdoctools-dev (>= 5.17.0~),
-               kinit-dev (>= 5.17.0~),
-               kio-dev (>= 5.17.0~),
-               kscreenlocker-dev (>= 5.5.1~),
-               kwayland-dev (>= 4:5.5.1~),
-               libegl1-mesa-dev (>= 1.2~),
-               libepoxy-dev (>= 1.2),
