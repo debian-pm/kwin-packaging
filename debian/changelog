@@ -6,6 +6,7 @@ kwin (4:5.5.2-0ubuntu1) UNRELEASED; urgency=medium
   * Debian Merge: Remaining changes:
     Changes for new release.
     Build libkwinglutils7 on any architecture, unbreaks build on armhf
+  * Fix several merge markers, another batch patch symbols.
 
   [ Clive Johnston ]
   * new upstream release
@@ -14,15 +15,6 @@ kwin (4:5.5.2-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Bhushan Shah ]
   * Build libkwinglutils7 on any architecture, unbreaks build on armhf
-
-  [ Scarlett Clark ]
-  * Fix duplicate breaks/replace. 
-  * Fix merge duplications. 
-  * Remove another duplicate cruft from bad merge. 
-  * Remove merge cruft from the dbg package... 
-  * Remove merge markers. 
-  * Remove merge markers from changelog. 
-  * batchpatch amd64,i386 symbols. 
 
  -- Clive Johnston <clivejo@aol.com>  Tue, 29 Dec 2015 17:46:44 +0000
 
