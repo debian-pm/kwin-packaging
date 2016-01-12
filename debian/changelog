@@ -21,6 +21,7 @@ kwin (4:5.5.2-0ubuntu1) UNRELEASED; urgency=medium
   * Remove another duplicate cruft from bad merge. 
   * Remove merge cruft from the dbg package... 
   * Remove merge markers. 
+  * Remove merge markers from changelog. 
 
  -- Clive Johnston <clivejo@aol.com>  Tue, 29 Dec 2015 17:46:44 +0000
 
@@ -285,8 +286,6 @@ kwin (4:5.3.1-1~) wily; urgency=medium
 
  -- Maximiliano Curia <maxy@debian.org>  Fri, 05 Jun 2015 11:52:39 +0200
 
-=======
->>>>>>>
 kwin (4:5.3.1-0ubuntu3) wily; urgency=medium
 
   * No-change rebuild against Qt 5.4.2.
