@@ -22,6 +22,7 @@ kwin (4:5.5.2-0ubuntu1) UNRELEASED; urgency=medium
   * Remove merge cruft from the dbg package... 
   * Remove merge markers. 
   * Remove merge markers from changelog. 
+  * batchpatch amd64,i386 symbols. 
 
  -- Clive Johnston <clivejo@aol.com>  Tue, 29 Dec 2015 17:46:44 +0000
 
