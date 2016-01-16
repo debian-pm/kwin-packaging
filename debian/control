@@ -111,8 +111,8 @@ Depends: kwin-data (= ${source:Version}),
          ${shlibs:Depends}
 Recommends: libqt5multimedia5-plugins
 Suggests: kwin-addons
-Breaks: kwin (<= 4:5.3.1-0ubuntu3)
-Replaces: kwin (<= 4:5.3.1-0ubuntu3)
+Breaks: kwin (<= 4:5.3.1-0ubuntu3), kwin-data (<< 4:5.5.3a~)
+Replaces: kwin (<= 4:5.3.1-0ubuntu3), kwin-data (<< 4:5.5.3a~)
 Description: KDE window manager, common files
  KWin (pronounced as one syllable "kwin") is the window
  manager for the KDE Plasma Desktop. It gives you complete
