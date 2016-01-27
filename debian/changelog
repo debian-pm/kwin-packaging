@@ -1,4 +1,4 @@
-kwin (4:5.5.3a-0ubuntu1) UNRELEASED; urgency=medium
+kwin (4:5.5.4-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Scarlett Clark ]
   * New upstream release Xenial.
@@ -25,7 +25,10 @@ kwin (4:5.5.3a-0ubuntu1) UNRELEASED; urgency=medium
   [ Philip Muškovac ]
   * kwin-common breaks/replaces kwin-data << 4:5.5.3~
 
- -- Clive Johnston <clivejo@aol.com>  Tue, 29 Dec 2015 17:46:44 +0000
+  [ Clive Johnston ]
+  * New upstream release
+
+ -- Clive Johnston <clivejo@aol.com>  Wed, 27 Jan 2016 20:12:59 +0000
 
 kwin (4:5.4.3-0ubuntu4) xenial; urgency=medium
 
