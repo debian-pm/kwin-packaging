@@ -24,6 +24,8 @@ kwin (4:5.5.4-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Philip Muškovac ]
   * kwin-common breaks/replaces kwin-data << 4:5.5.3~
+  * Disable libhybris entirely on upstream recommendation, as it requires
+    libhybris upstream git, not the ubuntu fork
 
   [ Clive Johnston ]
   * New upstream release
