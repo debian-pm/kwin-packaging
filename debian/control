@@ -146,7 +146,7 @@ Package: kwin-wayland
 Architecture: any
 Multi-Arch: no
 Depends: kwin-common (= ${binary:Version}),
-         kwin-wayland-backend-drm (= ${binary:Version}) | kwin-wayland-backend-hwcomposer (= ${binary:Version}) | kwin-wayland-backend,
+         kwin-wayland-backend-drm (= ${binary:Version}) | kwin-wayland-backend,
          xwayland,
          ${misc:Depends},
          ${shlibs:Depends}
@@ -245,14 +245,14 @@ Description: KDE window manager render utils library
  .
  This package is part of the KDE base workspace module.
 
-Package: kwin-hwcomposer-backend
-Depends: kwin-wayland-backend-hwcomposer, ${misc:Depends}
-Architecture: all
-Multi-Arch: foreign
-Priority: extra
-Section: oldlibs
-Description: transitional dummy package
- This is a transitional dummy package. It can safely be removed.
+#Package: kwin-hwcomposer-backend
+#Depends: kwin-wayland-backend-hwcomposer, ${misc:Depends}
+#Architecture: all
+#Multi-Arch: foreign
+#Priority: extra
+#Section: oldlibs
+#Description: transitional dummy package
+# This is a transitional dummy package. It can safely be removed.
 
 # requires libhybris but the not the ubuntu version of it
 #Package: kwin-wayland-backend-hwcomposer
