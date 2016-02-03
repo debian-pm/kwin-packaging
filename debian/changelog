@@ -30,6 +30,10 @@ kwin (4:5.5.4-0ubuntu1) UNRELEASED; urgency=medium
   [ Clive Johnston ]
   * New upstream release
 
+  [ Bhushan Shah ]
+  * Bump versions for libkwinglutils, libkwinxenderutils and
+    libkwineffects
+
  -- Clive Johnston <clivejo@aol.com>  Wed, 27 Jan 2016 20:12:59 +0000
 
 kwin (4:5.4.3-0ubuntu4) xenial; urgency=medium
