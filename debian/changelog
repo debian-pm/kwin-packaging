@@ -24,13 +24,18 @@ kwin (4:5.5.4-0ubuntu1) UNRELEASED; urgency=medium
 
   [ Philip Muškovac ]
   * kwin-common breaks/replaces kwin-data << 4:5.5.3~
-  * Disable libhybris entirely on upstream recommendation, as it requires
-    libhybris upstream git, not the ubuntu fork
 
   [ Clive Johnston ]
   * New upstream release
 
  -- Clive Johnston <clivejo@aol.com>  Wed, 27 Jan 2016 20:12:59 +0000
+
+kwin (4:5.4.3-0ubuntu5) xenial; urgency=medium
+
+  * Disable libhybris entirely on upstream recommendation, as it requires
+    libhybris upstream git, not the ubuntu fork
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Wed, 03 Feb 2016 22:44:44 +0100
 
 kwin (4:5.4.3-0ubuntu4) xenial; urgency=medium
 
