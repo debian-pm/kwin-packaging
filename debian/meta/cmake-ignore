@@ -1,2 +1,4 @@
 # qml module runtime dep
 Qt5Multimedia
+libhybris
+Xwayland
