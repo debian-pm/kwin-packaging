@@ -6,5 +6,8 @@ if [ -z "$HOME" ] || [ ! -d "$HOME" ]; then
 fi
 mkdir -p "$HOME"/.config || true
 mkdir -p "$HOME"/.kde-unit-test || true
+mkdir -p "$HOME"/.run || true
+chmod 700 "$HOME"/.run
+export XDG_RUNTIME_DIR="$HOME"/.run
 
 xvfb-run -a dbus-launch --exit-with-session dh_auto_test
