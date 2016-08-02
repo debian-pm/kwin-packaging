@@ -1,7 +1,8 @@
 Tests: testsuite
 Depends: @, debhelper, cmake,
          xvfb, xauth, dbus-x11, xserver-xephyr, libkf5service-bin, kded5,
-         xwayland, kwayland-integration, qtwayland5
+         xwayland, kwayland-integration, qtwayland5, mesa-utils,
+         dmz-cursor-theme
 Restrictions: build-needed
 
 Tests: acc
