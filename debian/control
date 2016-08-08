@@ -110,7 +110,7 @@ Depends: kwin-data (= ${source:Version}),
          qml-module-qtmultimedia,
          ${misc:Depends},
          ${shlibs:Depends}
-Recommends: libqt5multimedia5-plugins, kwin-style-breeze
+Recommends: kwin-style-breeze, libqt5multimedia5-plugins
 Suggests: kwin-addons
 Breaks: kwin (<= 4:5.3.1-0ubuntu3), kwin-data (<< 4:5.5.3a~)
 Replaces: kwin (<= 4:5.3.1-0ubuntu3), kwin-data (<< 4:5.5.3a~)
@@ -132,6 +132,7 @@ Depends: kwin-common (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Breaks: kde-window-manager (<< 4:5)
 Replaces: kde-window-manager (<< 4:5)
 Provides: kwin
+Recommends: qtvirtualkeyboard
 Description: KDE window manager, X11 version
  KWin (pronounced as one syllable "kwin") is the window
  manager for the KDE Plasma Desktop. It gives you complete
