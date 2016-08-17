@@ -184,7 +184,7 @@ Description: KDE window manager effect builtins library
  .
  This package is part of the KDE base workspace module.
 
-Package: libkwineffects8
+Package: libkwineffects9
 Section: libs
 Architecture: any
 Multi-Arch: same
