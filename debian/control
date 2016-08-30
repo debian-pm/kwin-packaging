@@ -104,7 +104,8 @@ Description: KDE window manager - devel files
 Package: kwin-common
 Architecture: any
 Multi-Arch: same
-Depends: kwin-data (= ${source:Version}),
+Depends: gstreamer1.0-plugins-good,
+         kwin-data (= ${source:Version}),
          libkwineffects9 (= ${binary:Version}),
          qml-module-org-kde-kquickcontrolsaddons,
          qml-module-qtmultimedia,
