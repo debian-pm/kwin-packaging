@@ -112,7 +112,7 @@ Depends: gstreamer1.0-plugins-good,
          qml-module-qtmultimedia,
          ${misc:Depends},
          ${shlibs:Depends}
-Recommends: kwin-style-breeze, libqt5multimedia5-plugins
+Recommends: kwin-style-breeze, libqt5multimedia5-plugins, qtvirtualkeyboard
 Suggests: kwin-addons
 Breaks: kwin (<= 4:5.3.1-0ubuntu3), kwin-data (<< 4:5.5.3a~)
 Replaces: kwin (<= 4:5.3.1-0ubuntu3), kwin-data (<< 4:5.5.3a~)
@@ -134,7 +134,6 @@ Depends: kwin-common (= ${binary:Version}), ${misc:Depends}, ${shlibs:Depends}
 Breaks: kde-window-manager (<< 4:5)
 Replaces: kde-window-manager (<< 4:5)
 Provides: kwin
-Recommends: qtvirtualkeyboard
 Description: KDE window manager, X11 version
  KWin (pronounced as one syllable "kwin") is the window
  manager for the KDE Plasma Desktop. It gives you complete
@@ -369,13 +368,12 @@ Description: KDE window manager virtual plugin
 Package: kwin-data
 Architecture: all
 Multi-Arch: foreign
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Recommends: plasma-framework,
-            qml-module-qtmultimedia,
-            qml-module-qtquick-layouts,
-            qml-module-qtquick-virtualkeyboard,
-            qml-module-qtquick-window2,
-            qml-module-qtquick2
+Depends: plasma-framework,
+         qml-module-qtmultimedia,
+         qml-module-qtquick-layouts,
+         qml-module-qtquick-virtualkeyboard,
+         qml-module-qtquick-window2,
+         qml-module-qtquick2
 Breaks: ${kde-l10n:all}
 Replaces: ${kde-l10n:all}
 Description: KDE window manager data files
