@@ -363,13 +363,12 @@ Description: KDE window manager virtual plugin
 Package: kwin-data
 Architecture: all
 Multi-Arch: foreign
-Depends: ${misc:Depends}, ${shlibs:Depends}
-Recommends: plasma-framework,
-            qml-module-qtmultimedia,
-            qml-module-qtquick-layouts,
-            qml-module-qtquick-virtualkeyboard,
-            qml-module-qtquick-window2,
-            qml-module-qtquick2
+Depends: plasma-framework,
+         qml-module-qtmultimedia,
+         qml-module-qtquick-layouts,
+         qml-module-qtquick-virtualkeyboard,
+         qml-module-qtquick-window2,
+         qml-module-qtquick2
 Breaks: ${kde-l10n:all}
 Replaces: ${kde-l10n:all}
 Description: KDE window manager data files
