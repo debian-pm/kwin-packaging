@@ -107,7 +107,7 @@ Architecture: any
 Multi-Arch: same
 Depends: gstreamer1.0-plugins-good,
          kwin-data (= ${source:Version}),
-         libkwineffects10 (= ${binary:Version}),
+         libkwineffects11 (= ${binary:Version}),
          qml-module-org-kde-kquickcontrolsaddons,
          qml-module-qtmultimedia,
          ${misc:Depends},
@@ -171,7 +171,7 @@ Package: libkwin4-effect-builtins1
 Section: libs
 Architecture: any
 Multi-Arch: same
-Depends: libkwineffects10 (= ${binary:Version}),
+Depends: libkwineffects11 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Description: KDE window manager effect builtins library
@@ -185,17 +185,19 @@ Description: KDE window manager effect builtins library
  .
  This package is part of the KDE base workspace module.
 
-Package: libkwineffects10
+Package: libkwineffects11
 Section: libs
 Architecture: any
 Multi-Arch: same
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libkwineffects5 (<< 4:5.2.0),
+Breaks: libkwineffects10,
+        libkwineffects5 (<< 4:5.2.0),
         libkwineffects6 (<< 4:5.4.1+git20150907),
         libkwineffects7 (<< 4:5.5.80+git20160203),
         libkwineffects8,
         libkwineffects9
-Replaces: libkwineffects5 (<< 4:5.2.0),
+Replaces: libkwineffects10,
+          libkwineffects5 (<< 4:5.2.0),
           libkwineffects6 (<< 4:5.4.1+git20150907),
           libkwineffects7 (<< 4:5.5.80+git20160203),
           libkwineffects8,
@@ -211,17 +213,19 @@ Description: KDE window manager effects library
  .
  This package is part of the KDE base workspace module.
 
-Package: libkwinglutils10
+Package: libkwinglutils11
 Section: libs
 Architecture: any
 Multi-Arch: same
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libkwinglutils5 (<< 4:5.2.0),
+Breaks: libkwinglutils10,
+        libkwinglutils5 (<< 4:5.2.0),
         libkwinglutils6 (<< 4:5.4.1+git20150907),
         libkwinglutils7 (<< 4.5.5.80+git20160203),
         libkwinglutils8,
         libkwinglutils9
-Replaces: libkwinglutils5 (<< 4:5.2.0),
+Replaces: libkwinglutils10,
+          libkwinglutils5 (<< 4:5.2.0),
           libkwinglutils6 (<< 4:5.4.1+git20150907),
           libkwinglutils7 (<< 4:5.5.80+git20160203),
           libkwinglutils8,
@@ -237,17 +241,19 @@ Description: KDE window manager gl utils library
  .
  This package is part of the KDE base workspace module.
 
-Package: libkwinxrenderutils10
+Package: libkwinxrenderutils11
 Section: libs
 Architecture: any
 Multi-Arch: same
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Breaks: libkwinxrenderutils5 (<< 4:5.2.0),
+Breaks: libkwinxrenderutils10,
+        libkwinxrenderutils5 (<< 4:5.2.0),
         libkwinxrenderutils6 (<< 4:5.4.1+git20150907),
         libkwinxrenderutils7 (<< 4:5.5.80+git20160203),
         libkwinxrenderutils8,
         libkwinxrenderutils9
-Replaces: libkwinxrenderutils5 (<< 4:5.2.0),
+Replaces: libkwinxrenderutils10,
+          libkwinxrenderutils5 (<< 4:5.2.0),
           libkwinxrenderutils6 (<< 4:5.4.1+git20150907),
           libkwinxrenderutils7 (<< 4:5.5.80+git20160203),
           libkwinxrenderutils8,
