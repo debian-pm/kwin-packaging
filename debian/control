@@ -19,7 +19,7 @@ Build-Depends: breeze-dev (>= 5.5.1~),
                libfontconfig1-dev,
                libfreetype6-dev,
                libgbm-dev,
-               libhybris-dev [armhf],
+               libhybris-dev [armel armhf arm64],
                libice-dev,
                libinput-dev (>= 0.10~),
                libkdecorations2-dev (>= 4:5.5.1~),
@@ -272,7 +272,7 @@ Description: KDE window manager render utils library
 
 Package: kwin-wayland-backend-hwcomposer
 Section: libs
-Architecture: armel armhf
+Architecture: armel armhf arm64
 Depends: ${misc:Depends}, ${shlibs:Depends}
 Provides: kwin-wayland-backend
 Description: KDE window manager hwcompositor plugin
